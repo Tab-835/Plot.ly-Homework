@@ -76,7 +76,7 @@ d3.json("samples.json").then((bbData) => {
       var bubbleData = [trace2];
   
       var layout = {
-        title: 'OTU Frequency',
+        title: 'OTU ID',
         showlegend: false,
         height: 600,
         width: 930
@@ -89,7 +89,7 @@ d3.json("samples.json").then((bbData) => {
         type: "indicator",
         mode: "gauge+number",
         value: washFrequency,
-        title: { text: "Belly Button Washes Per Week" },
+        title: { text: "Belly Button Washing Frequency" },
         gauge: {
           axis: { range: [0, 9], tickwidth: 0.5, tickcolor: "black" },
           bar: { color: "#669999" },
